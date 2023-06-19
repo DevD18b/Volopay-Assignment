@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "31121aeb-d86b-4bf1-9457-30a5519ddf40",
+		"name": "Volopay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21172222"
+	},
+	"item": [
+		{
+			"name": "total_items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/total_items?start_date=2022-10-01&end_date=2022-12-31&department=Marketting",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"total_items"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2022-10-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-12-31"
+						},
+						{
+							"key": "department",
+							"value": "Marketting"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nth_most_total_item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/nth_most_total_item?start_date=2022-10-01&end_date=2022-12-31&item_by=quantity&n=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"nth_most_total_item"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2022-10-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-12-31"
+						},
+						{
+							"key": "item_by",
+							"value": "quantity"
+						},
+						{
+							"key": "n",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "percentage_of_department_wise_sold_items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/percentage_of_department_wise_sold_items?start_date=2022-06-01&end_date=2022-12-31",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"percentage_of_department_wise_sold_items"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2022-06-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "monthly_sales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/monthly_sales?product=Outplay&year=2022",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"monthly_sales"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "Outplay"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
